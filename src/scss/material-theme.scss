@@ -1,0 +1,20 @@
+// Custom Theming for Angular Material. For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+@include mat.core();
+
+// Available color palettes: https://material.io/design/color/
+$primaryPalette: mat.define-palette(mat.$indigo-palette);
+$accentPalette: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$warnPalette: mat.define-palette(mat.$red-palette);
+
+$FrontendChallenge-theme: mat.define-light-theme((
+  color: (
+    primary: $primaryPalette,
+    accent: $accentPalette,
+    warn: $warnPalette,
+  ),
+  typography: mat.define-typography-config($font-family: 'Open Sauce One'),
+  density: 0
+));
+
+@include mat.all-component-themes($FrontendChallenge-theme);
