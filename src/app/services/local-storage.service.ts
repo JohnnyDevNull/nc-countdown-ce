@@ -15,8 +15,7 @@ export class LocalStorageService {
     return this.document.defaultView;
   }
 
-  constructor(@Inject(DOCUMENT) private readonly document: Document) {
-  }
+  constructor(@Inject(DOCUMENT) private readonly document: Document) {}
 
   set(data: IAppData) {
    this.window?.localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
@@ -29,9 +28,7 @@ export class LocalStorageService {
 
   save(data: IAppData) {
     const previousData = this.get();
-    console.log(previousData);
     const newData = {...previousData || {}, ...data};
-    console.log(newData);
     this.set(newData);
   }
 }
