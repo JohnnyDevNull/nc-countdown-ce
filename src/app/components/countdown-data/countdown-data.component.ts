@@ -14,12 +14,16 @@ export class CountdownDataComponent implements AfterViewInit, OnChanges {
   @Input() durationValue = '';
 
   ngAfterViewInit(): void {
-    setTimeout(() => fitty('.fit', { multiLine: false }), 100);
+    this.callFitty()
   }
 
   ngOnChanges(changes: SimpleChanges) {
     if (hasChange(changes['dateValue']) || hasChange(changes['titleValue'])) {
-      fitty.fitAll();
+      this.callFitty()
     }
+  }
+
+  private callFitty() {
+    setTimeout(() => fitty('.fit', { multiLine: false }), 150);
   }
 }
