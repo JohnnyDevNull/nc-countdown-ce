@@ -1,3 +1,33 @@
+
+## Running the app
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Test the app
+
+Run `ng test` for executing the tests via [@angular-builders/jest](https://www.npmjs.com/package/@angular-builders/jest)
+
+## Building the app
+
+Run `ng bulid` for default build. The artifacts will be located under `./dist/frontend-challenge/browser`
+
+## Building the app for GitHub Pages
+
+Run `npm run build-github` for a build with `--base-href`. The artifacts will be located under `./dist/frontend-challenge/browser`
+
+## Improvements
+
+- The `fitty` library does not resize the content back to bigger font sizes, this can be improved with some more logic
+- The actual state is saved to the LocalStorage and can be improved for example to push to a CRUD API
+- Maybe setting the input fields from the LocalStorage too if wanted
+- Adding the possibility to create multiple countdowns accessible through a list
+- Adding a reset / clear button e.g. on the bottom right with an action menu
+- Adding e2e tests with Cypress or Playwright
+
+---
+
+# ORIGINAL CONTENT:
+
 # Description & requirements
 
 Your objective in this assignment is to create a countdown app built using this boilerplate (+ any other tools of your choice) that follows the design specifications provided [in this Figma file](https://www.figma.com/file/UPEugUz5jM9IzIkWft2Y9m/NC-challenge). The app should work in portrait as well as in landscape mode while the text displayed on the screen should always fill the whole width of the screen.
