@@ -2,11 +2,11 @@
   <div class="w-full w-max-lg">
     <app-countdown-data
       [titleValue]="titleValue"
-      [dateValue]="dateValue"
+      [durationValue]="durationValue"
     ></app-countdown-data>
     <app-user-input
-      (titleChange)="titleValue = $event"
-      (dateChange)="dateValue = $event"
+      (titleChange)="onTitleChange($event)"
+      (dateChange)="onDateChange($event)"
     ></app-user-input>
   </div>
 </main>

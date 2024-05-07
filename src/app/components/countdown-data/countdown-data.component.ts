@@ -11,10 +11,10 @@ import { hasChange } from '../../utils/has-change';
 })
 export class CountdownDataComponent implements AfterViewInit, OnChanges {
   @Input() titleValue = '';
-  @Input() dateValue = '';
+  @Input() durationValue = '';
 
   ngAfterViewInit(): void {
-    fitty('.fit', { multiLine: false });
+    setTimeout(() => fitty('.fit', { multiLine: false }), 100);
   }
 
   ngOnChanges(changes: SimpleChanges) {
