@@ -1,4 +1,3 @@
-
 main {
   width: 100%;
   min-height: 100vh;
@@ -6,31 +5,4 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
-
-  h1 {
-    font-size: 6rem;
-    text-align: center;
-    margin: 0 0 2rem 0;
-
-    &.title-text {
-      color: #72035D;
-      font-weight: 800;
-    }
-
-    &.duration-text {
-      font-weight: 400;
-    }
-  }
-
-  .countdown-data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .user-input {
-    .mat-mdc-form-field {
-      margin-right: 20px;
-    }
-  }
 }

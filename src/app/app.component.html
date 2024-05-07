@@ -1,25 +1,13 @@
-
 <main class="main">
-
   <div class="w-full w-max-lg">
-    <div class="countdown-data">
-      <h1 class="text-center title-text fit">Time To {{ titleValue$ | async }}</h1>
-      <h1 class="text-center duration-text fit">{{ durationValue$ | async }}</h1>
-    </div>
-
-    <div class="user-input text-center">
-      <mat-form-field appearance="outline">
-        <mat-label>Title</mat-label>
-        <input matInput type="text" (input)="onTitleChange($event)">
-      </mat-form-field>
-
-      <mat-form-field appearance="outline">
-        <mat-label>Date</mat-label>
-        <input matInput type="date" (change)="onDateChange($event)">
-      </mat-form-field>
-    </div>
+    <app-countdown-data
+      [titleValue]="titleValue"
+      [dateValue]="dateValue"
+    ></app-countdown-data>
+    <app-user-input
+      (titleChange)="titleValue = $event"
+      (dateChange)="dateValue = $event"
+    ></app-user-input>
   </div>
-
 </main>
-
 <router-outlet />
