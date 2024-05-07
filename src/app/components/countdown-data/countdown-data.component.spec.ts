@@ -11,13 +11,13 @@ describe('CountdownDataComponent', () => {
       imports: [CountdownDataComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(CountdownDataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).toBeInstanceOf(CountdownDataComponent);
   });
 });
