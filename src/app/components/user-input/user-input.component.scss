@@ -9,3 +9,11 @@
 .mat-mdc-form-field:last-child {
   margin-right: 0;
 }
+
+@media screen and (max-width: 500px) {
+  .mat-mdc-form-field {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 80%
+  }
+}

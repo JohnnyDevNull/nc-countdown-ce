@@ -22,3 +22,9 @@ h1 {
     font-weight: 400;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .countdown-data {
+    margin-bottom: 2rem;
+  }
+}
